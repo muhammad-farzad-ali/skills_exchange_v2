@@ -1,0 +1,288 @@
+/* Base palette and layout for the static site */
+:root {
+  --bg: #f4fbfb;
+  --bg-alt: #eef7ff;
+  --surface: rgba(255, 255, 255, 0.88);
+  --surface-strong: #ffffff;
+  --text: #12302f;
+  --muted: #4e6764;
+  --border: rgba(18, 48, 47, 0.12);
+  --primary: #1f7a6b;
+  --primary-dark: #165e53;
+  --secondary: #2765c4;
+  --accent: #dff3ea;
+  --shadow: 0 20px 60px rgba(15, 43, 42, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(39, 101, 196, 0.12), transparent 32%),
+    radial-gradient(circle at top right, rgba(31, 122, 107, 0.12), transparent 28%),
+    linear-gradient(180deg, var(--bg), #ffffff 54%, var(--bg-alt));
+}
+
+.glass {
+  background: var(--surface);
+  backdrop-filter: blur(18px);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.section-card {
+  background: var(--surface-strong);
+  border: 1px solid var(--border);
+  box-shadow: 0 14px 36px rgba(18, 48, 47, 0.08);
+}
+
+.section-eyebrow {
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+  background: rgba(31, 122, 107, 0.1);
+  color: var(--primary-dark);
+  border: 1px solid rgba(31, 122, 107, 0.12);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.soft-grid {
+  background-image:
+    linear-gradient(rgba(18, 48, 47, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(18, 48, 47, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link[aria-current="page"] {
+  color: var(--primary-dark);
+}
+
+.nav-link[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.45rem;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+.badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.badge-list span {
+  padding: 0.5rem 0.85rem;
+  border-radius: 999px;
+  background: #f0faf6;
+  border: 1px solid rgba(31, 122, 107, 0.14);
+  color: #20564f;
+  font-size: 0.92rem;
+}
+
+.callout {
+  background: linear-gradient(135deg, rgba(31, 122, 107, 0.12), rgba(39, 101, 196, 0.08));
+  border: 1px solid rgba(31, 122, 107, 0.14);
+}
+
+.disclaimer {
+  border-left: 4px solid var(--primary);
+  background: #f7fdfb;
+}
+
+.form-frame {
+  width: 100%;
+  min-height: 1180px;
+  border: 0;
+  border-radius: 1.25rem;
+  background: #ffffff;
+}
+
+.hero-blob {
+  position: absolute;
+  inset: auto auto 0 0;
+  width: 24rem;
+  height: 24rem;
+  background: radial-gradient(circle, rgba(31, 122, 107, 0.17), transparent 68%);
+  filter: blur(10px);
+  pointer-events: none;
+}
+
+.page-shell {
+  position: relative;
+}
+
+.site-footer a {
+  color: #1a5b55;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
+/* Base palette and layout for the static site */
+:root {
+  --bg: #f4fbfb;
+  --bg-alt: #eef7ff;
+  --surface: rgba(255, 255, 255, 0.88);
+  --surface-strong: #ffffff;
+  --text: #12302f;
+  --muted: #4e6764;
+  --border: rgba(18, 48, 47, 0.12);
+  --primary: #1f7a6b;
+  --primary-dark: #165e53;
+  --secondary: #2765c4;
+  --accent: #dff3ea;
+  --shadow: 0 20px 60px rgba(15, 43, 42, 0.12);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  color: var(--text);
+  background:
+    radial-gradient(circle at top left, rgba(39, 101, 196, 0.12), transparent 32%),
+    radial-gradient(circle at top right, rgba(31, 122, 107, 0.12), transparent 28%),
+    linear-gradient(180deg, var(--bg), #ffffff 54%, var(--bg-alt));
+}
+
+.glass {
+  background: var(--surface);
+  backdrop-filter: blur(18px);
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+}
+
+.section-card {
+  background: var(--surface-strong);
+  border: 1px solid var(--border);
+  box-shadow: 0 14px 36px rgba(18, 48, 47, 0.08);
+}
+
+.section-eyebrow {
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--primary-dark);
+}
+
+.pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  border-radius: 999px;
+  padding: 0.4rem 0.8rem;
+  background: rgba(31, 122, 107, 0.1);
+  color: var(--primary-dark);
+  border: 1px solid rgba(31, 122, 107, 0.12);
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.soft-grid {
+  background-image:
+    linear-gradient(rgba(18, 48, 47, 0.04) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(18, 48, 47, 0.04) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.nav-link {
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.nav-link:hover,
+.nav-link[aria-current="page"] {
+  color: var(--primary-dark);
+}
+
+.nav-link[aria-current="page"]::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: -0.45rem;
+  height: 2px;
+  border-radius: 999px;
+  background: linear-gradient(90deg, var(--primary), var(--secondary));
+}
+
+.badge-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+}
+
+.badge-list span {
+  padding: 0.5rem 0.85rem;
+  border-radius: 999px;
+  background: #f0faf6;
+  border: 1px solid rgba(31, 122, 107, 0.14);
+  color: #20564f;
+  font-size: 0.92rem;
+}
+
+.callout {
+  background: linear-gradient(135deg, rgba(31, 122, 107, 0.12), rgba(39, 101, 196, 0.08));
+  border: 1px solid rgba(31, 122, 107, 0.14);
+}
+
+.disclaimer {
+  border-left: 4px solid var(--primary);
+  background: #f7fdfb;
+}
+
+.form-frame {
+  width: 100%;
+  min-height: 1180px;
+  border: 0;
+  border-radius: 1.25rem;
+  background: #ffffff;
+}
+
+.hero-blob {
+  position: absolute;
+  inset: auto auto 0 0;
+  width: 24rem;
+  height: 24rem;
+  background: radial-gradient(circle, rgba(31, 122, 107, 0.17), transparent 68%);
+  filter: blur(10px);
+  pointer-events: none;
+}
+
+.page-shell {
+  position: relative;
+}
+
+.site-footer a {
+  color: #1a5b55;
+}
+
+.site-footer a:hover {
+  text-decoration: underline;
+}
