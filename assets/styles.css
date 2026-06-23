@@ -21,8 +21,16 @@ html {
 body {
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(39, 101, 196, 0.12), transparent 32%),
-    radial-gradient(circle at top right, rgba(31, 122, 107, 0.12), transparent 28%),
+    radial-gradient(
+      circle at top left,
+      rgba(39, 101, 196, 0.12),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at top right,
+      rgba(31, 122, 107, 0.12),
+      transparent 28%
+    ),
     linear-gradient(180deg, var(--bg), #ffffff 54%, var(--bg-alt));
 }
 
@@ -104,7 +112,11 @@ body {
 }
 
 .callout {
-  background: linear-gradient(135deg, rgba(31, 122, 107, 0.12), rgba(39, 101, 196, 0.08));
+  background: linear-gradient(
+    135deg,
+    rgba(31, 122, 107, 0.12),
+    rgba(39, 101, 196, 0.08)
+  );
   border: 1px solid rgba(31, 122, 107, 0.14);
 }
 
@@ -126,7 +138,11 @@ body {
   inset: auto auto 0 0;
   width: 24rem;
   height: 24rem;
-  background: radial-gradient(circle, rgba(31, 122, 107, 0.17), transparent 68%);
+  background: radial-gradient(
+    circle,
+    rgba(31, 122, 107, 0.17),
+    transparent 68%
+  );
   filter: blur(10px);
   pointer-events: none;
 }
@@ -165,8 +181,16 @@ html {
 body {
   color: var(--text);
   background:
-    radial-gradient(circle at top left, rgba(39, 101, 196, 0.12), transparent 32%),
-    radial-gradient(circle at top right, rgba(31, 122, 107, 0.12), transparent 28%),
+    radial-gradient(
+      circle at top left,
+      rgba(39, 101, 196, 0.12),
+      transparent 32%
+    ),
+    radial-gradient(
+      circle at top right,
+      rgba(31, 122, 107, 0.12),
+      transparent 28%
+    ),
     linear-gradient(180deg, var(--bg), #ffffff 54%, var(--bg-alt));
 }
 
@@ -248,7 +272,11 @@ body {
 }
 
 .callout {
-  background: linear-gradient(135deg, rgba(31, 122, 107, 0.12), rgba(39, 101, 196, 0.08));
+  background: linear-gradient(
+    135deg,
+    rgba(31, 122, 107, 0.12),
+    rgba(39, 101, 196, 0.08)
+  );
   border: 1px solid rgba(31, 122, 107, 0.14);
 }
 
@@ -270,7 +298,11 @@ body {
   inset: auto auto 0 0;
   width: 24rem;
   height: 24rem;
-  background: radial-gradient(circle, rgba(31, 122, 107, 0.17), transparent 68%);
+  background: radial-gradient(
+    circle,
+    rgba(31, 122, 107, 0.17),
+    transparent 68%
+  );
   filter: blur(10px);
   pointer-events: none;
 }
